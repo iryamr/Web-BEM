@@ -1107,3 +1107,102 @@ section {
   font-size: 13px;
   color: #012970;
 }
+
+/* carousel */
+
+/* news */
+
+#event .carousel-inner {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+@media screen and (min-width: 768px) {
+  #fasilkomNews .carousel-inner {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fasilkomNews .carousel-inner {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+}
+
+/* event */
+
+#event .card {
+  border: none;
+}
+
+#event .bulan {
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+#event .carousel-control-prev {
+  position: absolute;
+  bottom: -250px;
+  margin-left: 380px;
+}
+
+#event .carousel-control-next {
+  position: absolute;
+  bottom: -250px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .event {
+    margin-top: 40px;
+  }
+
+  #event .carousel-inner {
+    width: 60%;
+    position: relative;
+    left: 20%;
+  }
+
+  #event .carousel-control-prev {
+    position: absolute;
+    bottom: -280px;
+    margin-left: 220px;
+  }
+
+  #event .carousel-control-next {
+    position: absolute;
+    bottom: -280px;
+    margin-right: 85px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event {
+    margin-top: 40px;
+  }
+
+  #event .carousel-inner {
+    width: 60%;
+    position: relative;
+    left: 20%;
+  }
+
+  #event .carousel-control-prev {
+    position: absolute;
+    bottom: -300px;
+    margin-top: -40px;
+    margin-left: 250px;
+  }
+
+  #event .carousel-control-next {
+    position: absolute;
+    bottom: -300px;
+    margin-top: -40px;
+    margin-right: 60px;
+  }
+}
