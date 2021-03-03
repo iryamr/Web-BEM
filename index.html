@@ -25,6 +25,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
 
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
@@ -134,35 +137,26 @@
         <div class="row">
           <div class="col-md">
             <header class="section-header">
-              <p>Fasilkom News</p>
+              <p>Seputar Fasilkom</p>
             </header>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-4">
+
           <div class="col-md">
-            <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel">
-              
-              <!-- <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div> -->
+
+            <h3 class="text-center">Fasilkom News</h3>
+
+            <div id="fasilkomNews" class="carousel slide carousel-dark" data-bs-ride="carousel">
   
-              <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-              </ol>
-  
-              <div class="carousel-inner mt-3">
+              <div class="carousel-inner mt-4">
   
                 <div class="carousel-item active">
   
                   <div class="row d-flex justify-content-center">
   
-                    <div class="col-sm">
+                    <div class="col-md">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
@@ -178,12 +172,12 @@
                   </div>
                   
                 </div>
-  
+
                 <div class="carousel-item">
-                
+  
                   <div class="row d-flex justify-content-center">
-                
-                    <div class="col-sm">
+  
+                    <div class="col-md">
                       <div class="card">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
@@ -195,47 +189,87 @@
                         </div>
                       </div>
                     </div>
-                
-                  </div>
-                
-                </div>
   
-                <div class="carousel-item">
-                
-                  <div class="row d-flex justify-content-center">
-                
-                    <div class="col-sm">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">
-                            Some quick example text to build on the card title and make up the bulk
-                            of the card's content.
-                          </p>
-                          <a href="#!" class="float-end">Selengkapnya</a>
-                        </div>
-                      </div>
-                    </div>
-                
                   </div>
-                
+                  
                 </div>
                 
               </div>
   
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#fasilkomNews" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+
+              <button class="carousel-control-next" type="button" data-bs-target="#fasilkomNews" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
   
             </div>
+
           </div>
-          <div class="col-md">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est impedit ex vero non saepe porro neque rerum eos illum quo!</p>
+          
+          <div class="col-md event">
+            <h3 class="text-center">Upcoming Events</h3>
+
+            <div id="event" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+            
+              <div class="carousel-inner mt-4">
+            
+                <div class="carousel-item active">
+            
+                  <div class="row d-flex justify-content-center">
+                    <h4 class="bulan">February</h4>
+                    <div class="col-md">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="carousel-item">
+            
+                  <div class="row d-flex justify-content-center">
+                  <h4 class="bulan">Maret</h4>
+                    <div class="col-md">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">
+                            Some quick example text to build on the card title and make up the bulk
+                            of the card's content.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+              <button class="carousel-control-prev" type="button" data-bs-target="#event" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+            
+              <button class="carousel-control-next" type="button" data-bs-target="#event" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            
+            </div>
           </div>
           
         </div>
@@ -303,7 +337,6 @@
       <div class="container" data-aos="fade-up">
 
         <header class="section-header mb-3">
-          <!-- <h2>Portfolio</h2> -->
           <p>Karya Mahasiswa</p>
         </header>
 
@@ -398,48 +431,6 @@
                 <p>App</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
                   <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
                 </div>
               </div>
