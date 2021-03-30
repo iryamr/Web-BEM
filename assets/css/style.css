@@ -6,7 +6,8 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Quicksand", sans-serif;
   color: #444444;
 }
 
@@ -26,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -139,7 +140,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin-top: 3px;
 }
 
@@ -170,7 +171,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #013289;
@@ -188,19 +189,6 @@ section {
 .navbar .active,
 .navbar li:hover > a {
   color: #4154f1;
-}
-
-.navbar .getstarted {
-  background: #4154f1;
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.navbar .getstarted:hover {
-  color: #fff;
-  background: #5969f3;
 }
 
 .navbar .dropdown ul {
@@ -315,6 +303,7 @@ section {
 .navbar-mobile ul {
   display: block;
   position: absolute;
+  height: max-content;
   top: 75px;
   right: 15px;
   bottom: 15px;
@@ -336,10 +325,6 @@ section {
 .navbar-mobile .active,
 .navbar-mobile li:hover > a {
   color: #4154f1;
-}
-
-.navbar-mobile .getstarted {
-  margin: 15px;
 }
 
 .navbar-mobile .dropdown ul {
@@ -398,34 +383,14 @@ section {
   color: #444444;
   margin: 15px 0 0 0;
   font-size: 26px;
+  font-weight: 650;
 }
 
-.hero .btn-get-started {
-  margin-top: 30px;
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-}
-
-.hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.hero .btn-get-started i {
-  margin-left: 5px;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.hero .btn-get-started:hover i {
-  transform: translateX(5px);
+.hero hr {
+  background-color: #00e0fd;
+  border: 1px solid #00e0fd;
+  border-radius: 1px;
+  height: 3px;
 }
 
 .hero .hero-img {
@@ -462,65 +427,13 @@ section {
   .hero h2 {
     font-size: 24px;
   }
+  .hero hr {
+    margin: 20px auto;
+  }
   .hero .hero-img img {
+    margin-top: -20px;
     width: 100%;
   }
-}
-
-/*--------------------------------------------------------------
-# Index Page
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about .content {
-  background-color: #f6f9ff;
-  padding: 40px;
-}
-
-.about h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #4154f1;
-  text-transform: uppercase;
-}
-
-.about h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #012970;
-}
-
-.about p {
-  margin: 15px 0 30px 0;
-  line-height: 24px;
-}
-
-.about .btn-read-more {
-  line-height: 0;
-  padding: 15px 40px;
-  border-radius: 4px;
-  transition: 0.5s;
-  color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
-}
-
-.about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-.about .btn-read-more i {
-  margin-left: 5px;
-  font-size: 18px;
-  transition: 0.3s;
-}
-
-.about .btn-read-more:hover i {
-  transform: translateX(5px);
 }
 
 /*--------------------------------------------------------------
@@ -919,191 +832,458 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: #f6f9ff;
+  background: rgba(0, 0, 0, 0.05);
   padding: 0 0 30px 0;
   font-size: 14px;
-}
-
-.footer .footer-newsletter {
-  padding: 50px 0;
-  background: #f6f9ff;
-  border-top: 1px solid #e1ecff;
-}
-
-.footer .footer-newsletter h4 {
-  font-size: 24px;
-  margin: 0 0 10px 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 700;
-  color: #012970;
-}
-
-.footer .footer-newsletter form {
-  margin-top: 20px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-  border: 1px solid #e1ecff;
-}
-
-.footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 8px;
-  width: calc(100% - 140px);
-}
-
-.footer .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 30px;
-  margin: 3px;
-  background: #4154f1;
-  color: #fff;
-  transition: 0.3s;
-  border-radius: 4px;
-}
-
-.footer .footer-newsletter form input[type="submit"]:hover {
-  background: #5969f3;
-}
-
-.footer .footer-top {
-  background: white url(../img/footer-bg.png) no-repeat right top;
-  background-size: contain;
-  border-top: 1px solid #e1ecff;
-  border-bottom: 1px solid #e1ecff;
-  padding: 60px 0 30px 0;
-}
-
-@media (max-width: 992px) {
-  .footer .footer-top {
-    background-position: center bottom;
-  }
-}
-
-.footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
-
-.footer .footer-top .footer-info .logo {
-  line-height: 0;
-  margin-bottom: 15px;
-}
-
-.footer .footer-top .footer-info .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.footer .footer-top .footer-info .logo span {
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #012970;
-  font-family: "Nunito", sans-serif;
-  margin-top: 3px;
-}
-
-.footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
-}
-
-.footer .footer-top .social-links a {
-  font-size: 20px;
-  display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
-  line-height: 0;
-  margin-right: 10px;
-  transition: 0.3s;
-}
-
-.footer .footer-top .social-links a:hover {
-  color: #012970;
-}
-
-.footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #012970;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-.footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-.footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #d0d4fc;
-  font-size: 12px;
-  line-height: 0;
-}
-
-.footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-.footer .footer-top .footer-links ul a {
-  color: #013289;
-  transition: 0.3s;
-  display: inline-block;
-  line-height: 1;
-}
-
-.footer .footer-top .footer-links ul a:hover {
-  color: #4154f1;
-}
-
-.footer .footer-top .footer-contact p {
-  line-height: 26px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .footer .copyright {
   text-align: center;
   padding-top: 30px;
-  color: #012970;
+  color: black;
 }
 
 .footer .copyright .social-links a {
   font-size: 20px;
   display: inline-block;
-  color: rgba(1, 41, 112, 0.5);
+  /* color: rgba(1, 41, 112, 0.5); */
+  color: rgba(0, 0, 0, 0.5);
   line-height: 0;
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .copyright .social-links a:hover {
-  color: #012970;
+  /* color: #012970; */
+  color: black;
 }
 
-.footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #012970;
+/* seputarFasilkom */
+
+#seputarFasilkom {
+  background-color: rgba(0, 0, 0, 0.01);
+  height: 520px;
+}
+
+#seputarFasilkom h3,
+#seputarFasilkom h4 {
+  font-weight: bold;
+}
+
+#seputarFasilkom .carousel-inner {
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+
+#fasilkomNews .card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+#seputarFasilkom .carousel-control-prev,
+#seputarFasilkom .carousel-control-next {
+  width: 32px;
+  height: 32px;
+}
+
+#seputarFasilkom .carousel-control-prev-icon {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAzM2YrK1UkSUkgQGA5OVUrOVUoQ1EzQE0xPVUuOlEsQ04rQFUpPVIxO04vQkwvPFEuO04tQFMsPlEtPk8sPU4rPFErP1IuPE8uQFIsPk8vQFEtPk4tPVEsP1EsPlAvPU8uQFEtP1AtPVAtP1EsPlAuPlAtPU8tP1AsPk8tPk8sPlAsPVAuPk8tPlEtPlAtPlAtP1EuPlAtPlAuPlEtPVAtPlAsPVAtPlAtPk8tPlAsPlAtPlAtPlAtP1AtPlAtPlAuPlAtP1AtPlAtPlAtPk8tPlAtPlAtPlAtPlAtPlAtPlEtPlAtPlAtPlAsPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlD////NJq3WAAAAWnRSTlMABQYHCAkSExQVFhcYGRobJicoKS0uLzU3ODo8Pj9FRkdISX1+f4CBgoSUlZaXmKmqq629vr/Aw8XHyMnKy8zNzs/Q0tPX293f4uPk5enq6/Dx8vP09fj5+v6o9oGGAAAAAWJLR0RbdLyVNAAAAXVJREFUOMuFU1dbwkAQHBIUhQRFRWkWpEqRoggBBCtNQRAUb/7/D/EhQgIkn/t0ezPf7uzNHrAMOZpvjn5+Rs1cVMZmePOfXMYkr67BzqsvilYs7HE4POF4m5ylnWZcbVAU9o3cVxTUTEWO39g5WS0Z6HLgXyTKgNXddU3bN3zf049bDd46NlVLFWq6jit2XBZjYafLFAB4v4TR392qGoygmCoArlkw8Bc2TTVKzALyRCzn233mq2IiHIixhEve2+HAAy+QZ8wWR4JZNBm2xRFhHR/02OJQOcScEgBgypXQp5X5/T/B3EK1atEwi1Q3RGrIMQ5bRpIZRNmGLeOJZ5AnwmfHOORYAnIs2plVZhaAOhMBa7tDut1Is7tjuTA9JvSV11ixWrk71v4+kNJn1b2Ou2747l0k/gG7wVU81GP/yPSkGkXJZ1qlsmBtxVtnakY+JCKKLCunyUdymlj/wEp2bHg5zngsxpLOM/XhfD6sZ84l4/YXSkpWxAlyJVQAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  filter: invert(0);
+}
+
+#seputarFasilkom .carousel-control-next-icon {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAABFFBMVEUAAAAzM2YrK1UkSUkgQGA5OVUrOVUoQ1EzQE0xPVUuOlEsQ04rQFUpPVIxO04vQkwvPFEuO04tQFMsPlEtPk8sPU4rPFErP1IuPE8uQFIsPk8vQFEtPk4tPVEsP1EsPlAvPU8uQFEtP1AtPVAtP1EsPlAuPlAtPU8tP1AsPk8tPk8sPlAsPVAuPk8tPlEtPlAtPlAtP1EuPlAtPlAuPlEtPVAtPlAsPVAtPlAtPk8tPlAsPlAtPlAtPlAtP1AtPlAtPlAuPlAtP1AtPlAtPlAtPk8tPlAtPlAtPlAtPlAtPlAtPlEtPlAtPlAtPlAsPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlAtPlD////NJq3WAAAAWnRSTlMABQYHCAkSExQVFhcYGRobJicoKS0uLzU3ODo8Pj9FRkdISX1+f4CBgoSUlZaXmKmqq629vr/Aw8XHyMnKy8zNzs/Q0tPX293f4uPk5enq6/Dx8vP09fj5+v6o9oGGAAAAAWJLR0RbdLyVNAAAAXZJREFUOMuFU8lWwkAQLBIVgQFXVMANAZVNQUQMILiyKQoCwtT/f4iHSEhC8uzT9FTNdNXrbsAINZ6vf85mn/VcXMVyhPLfNGKYD9rglfSEspGIBTyeQCzZJMeXK2Y8WKO83lzkWwVJzfTJ3jtb+9YvD9rsheeJ6LHis2taK/FjQz+u1njrWVatlKnpOtJseR1sYb3NCwAITaSpfqXhN84RORIArnhtelbn64JRZBZQh9LkD74Xvhn+tuVAwRkfLJUtjEeeIs8EXBkpZlFnDK6MQ1bxxQBcGUH2MaWi+6MlRvoE8Od/gksJYZSoOYoUc5Eacky64jhnBnE2XXE88xjqUG654TscKECOBbdm3TALIDiWB87tjurtxiXb644D02FKH3mNZaeRu+P93wKJLit+O+4t8SM0T8I9tiNWPNphd9e0OBpl0eR2+0byXlhW72JMPqYOhaqKo/MncpSyL7DIDha9HGQCDraUk0y1P532q5kTZXH7CwVWVsTnnK42AAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  filter: invert(0);
+}
+
+@media screen and (max-width: 576px) {
+  #seputarFasilkom {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #seputarFasilkom {
+    height: 760px;
+  }
+}
+
+/* news */
+
+@media screen and (min-width: 768px) {
+  #fasilkomNews .carousel-inner {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #fasilkomNews .carousel-inner {
+    width: 70%;
+    position: relative;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #fasilkomNews .carousel-control-prev-icon,
+  #fasilkomNews .carousel-control-next-icon {
+    position: relative;
+    top: 70px !important;
+  }
+
+  #fasilkomNews .carousel-control-prev-icon {
+    position: relative;
+    left: 15px !important;
+  }
+
+  #fasilkomNews .carousel-control-next-icon {
+    position: relative;
+    right: 15px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #fasilkomNews .carousel-inner {
+    height: max-content;
+  }
+
+  #fasilkomNews .carousel-control-prev-icon,
+  #fasilkomNews .carousel-control-next-icon {
+    position: relative;
+    top: 60px;
+  }
+
+  #fasilkomNews .carousel-control-prev-icon {
+    position: relative;
+    left: 40px;
+  }
+
+  #fasilkomNews .carousel-control-next-icon {
+    position: relative;
+    right: 40px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #fasilkomNews .carousel-inner {
+    height: max-content;
+  }
+
+  #fasilkomNews .carousel-control-prev-icon,
+  #fasilkomNews .carousel-control-next-icon {
+    position: relative;
+    top: 60px;
+  }
+
+  #fasilkomNews .carousel-control-prev-icon {
+    position: relative;
+    left: 40px;
+  }
+
+  #fasilkomNews .carousel-control-next-icon {
+    position: relative;
+    right: 40px;
+  }
+}
+
+/* event */
+
+#event .card {
+  border: none;
+}
+
+#event .card-body {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+#event .bulan {
+  margin-top: 20px;
+  margin-left: 32px;
+}
+
+#event .carousel-control-prev {
+  position: absolute;
+  bottom: -250px;
+  margin-left: 390px;
+}
+
+#event .carousel-control-next {
+  position: absolute;
+  bottom: -250px;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 576px) {
+  .event {
+    margin-top: 40px;
+  }
+
+  #event .carousel-inner {
+    margin-top: -30px !important;
+    width: 60%;
+    position: relative;
+    left: 20%;
+  }
+
+  #event .carousel-inner .card {
+    height: max-content;
+  }
+
+  #event .carousel-control-prev-icon,
+  #event .carousel-control-next-icon {
+    position: relative;
+    top: 295px !important;
+    margin-bottom: 100px;
+  }
+
+  #event .carousel-control-prev-icon {
+    position: relative;
+    left: -145px !important;
+  }
+
+  #event .carousel-control-next-icon {
+    position: relative;
+    right: 50px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #event {
+    margin-top: 40px;
+  }
+
+  #event .carousel-inner {
+    width: 60%;
+    position: relative;
+    left: 20%;
+  }
+
+  #event .carousel-control-prev {
+    position: absolute;
+    bottom: -300px;
+    margin-top: -40px;
+    margin-left: 250px;
+  }
+
+  #event .carousel-control-next {
+    position: absolute;
+    bottom: -300px;
+    margin-top: -40px;
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .event {
+    margin-top: 50px;
+  }
+
+  #event .carousel-inner {
+    height: max-content;
+  }
+
+  #event .carousel-control-prev-icon,
+  #event .carousel-control-next-icon {
+    position: relative;
+    top: 200px;
+  }
+
+  #event .carousel-control-prev-icon {
+    position: relative;
+    left: 80px;
+  }
+
+  #event .carousel-control-next-icon {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #event .carousel-inner {
+    height: max-content;
+  }
+
+  #event .carousel-control-prev-icon,
+  #event .carousel-control-next-icon {
+    position: relative;
+    top: 210px;
+  }
+
+  #event .carousel-control-prev-icon {
+    position: relative;
+    left: 25px;
+  }
+
+  #event .carousel-control-next-icon {
+    position: relative;
+    right: 25px;
+  }
+}
+
+/* karya mahasiswa*/
+
+#portfolio {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+/* struktur */
+
+.struktur .container {
+  height: 800px;
+  font-size: 15px;
+}
+
+.struktur .container h4 {
+  font-weight: bold;
+}
+
+.struktur .container a {
+  color: inherit;
+}
+
+.struktur .container .card {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .struktur .container {
+    height: auto;
+  }
+
+  .struktur .row {
+    justify-content: center;
+  }
+}
+
+/* Visi Misi */
+
+.visimisi .container {
+  height: auto;
+  font-size: 15px;
+}
+
+.visimisi .container h2 {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .visimisi .container {
+    height: auto;
+    font-size: 14px;
+  }
+}
+
+/* BPH */
+
+.bph .container {
+  height: auto;
+}
+
+.bph .container h3 {
+  font-weight: bold;
+}
+
+.bph .container .card {
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+}
+
+.bph .container .card h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bph .container .card p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 576px) {
+  .bph .container {
+    height: auto;
+  }
+
+  .bph .container .card {
+    margin-bottom: 50px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .bph .container {
+    height: auto;
+  }
+
+  .bph .container .card {
+    margin-bottom: 50px;
+    height: fit-content;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .bph .container .card {
+    height: 80px;
+  }
+}
+
+/* content-bem */
+
+.content-bem .container .card {
+  border-radius: 8px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: visible;
+}
+
+.content-bem .container .card h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content-bem .container .card p {
+  font-size: 14px;
+}
+
+.content-bem .container a {
+  color: inherit;
+}
+
+@media screen and (max-width: 576px) {
+  .content-bem .container {
+    height: auto;
+  }
+
+  .content-bem .container .card {
+    margin-bottom: 50px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .content-bem .container {
+    height: auto;
+  }
+
+  .content-bem .container .card {
+    margin-bottom: 50px;
+    height: fit-content;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .content-bem .container .card {
+    height: 80px;
+  }
+}
+
+/* Fasilkom News */
+
+.berita .container {
+  height: 1000px;
 }
