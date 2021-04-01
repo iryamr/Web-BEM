@@ -119,7 +119,7 @@
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
-
+  
   /**
    * Scrool with offset on links with a class name .scrollto
    */

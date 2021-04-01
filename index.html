@@ -16,7 +16,9 @@
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +31,7 @@
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -40,8 +42,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/Arthasastra Logo no text.png" alt="" width="26">
-        <span>BEM Fasilkom Unsika</span>
+        <img src="assets/img/Arthasastra-Logo-Navbar.png" alt="">
+        <!-- <span>BEM Fasilkom Unsika</span> -->
       </a>
 
       <nav id="navbar" class="navbar">
@@ -51,7 +53,7 @@
               <li><a href="#">Grand Design</a></li>
               <li><a href="visimisi.html">Visi Misi</a></li>
               <li><a href="struktur.html">Struktur Organisasi</a></li>
-              <li><a href="#">Logo</a></li>
+              <li><a href="logo.html">Logo</a></li>
             </ul>
           </li>
           <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
@@ -94,7 +96,7 @@
               <li><a href="#">Pinjam BEM</a></li>
 
               <li><a href="lpj.html">LPJ Online</a></li>
-              <li><a href="advokasi.html">Advocacy Progress Report</a></li>
+              <li><a href="apr.html">Advocacy Progress Report</a></li>
 
               <li><a href="#">LPJ Online</a></li>
               <li><a href="#">Game</a></li>
@@ -114,18 +116,21 @@
   <section id="hero" class="hero d-flex align-items-center">
 
     <div class="container">
-      <div class="row">
-        <div class="col-lg-4 hero-img" data-aos="zoom-out" data-aos-delay="200">
-          <img src="assets/img/Arthasastra Logo no text.png" class="img-fluid w-50" alt="">
+      <div class="row text-center">
+        <div class="col-md hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/Arthasastra Logo no text.png" class="img-fluid" alt="" width="320">
         </div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center">
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md text-center">
           <h1 data-aos="fade-up">Selamat Datang di Website</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">BEM Fasilkom Unsika 2021</h2>
           <hr data-aos="fade-up" data-aos-delay="600" width="340">
-          <h4 data-aos="fade-up" data-aos-delay="600">Kabinet Arthasastra</h4>
+          <h4 data-aos="fade-up" data-aos-delay="600" class="mt-1">Arthasastra</h4>
           <div data-aos="fade-up" data-aos-delay="800">
-          </div>
         </div>
+      </div>
+
       </div>
     </div>
 
@@ -147,11 +152,17 @@
           </div>
         </div>
 
-        <div class="row mt-2 d-flex justify-content-center">
-          <div class="card" style="width: 50rem; height: 20rem;">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-3">
+              <img src="assets/img/Arthasastra Logo Sample 13.png" alt="" width="220">
+            </div>
+            <div class="col-md-6 deskripsi">
+              <p>ARTHASASTRA secara filosofis merupakan sebuah kitab
+              mengenai risalah dan sistem administrasi tata negara terbaik yang pertama
+              kali ada pada abad ke-4 Sebelum Masehi. Sedangkan secara etimologis,
+              #ARTHASASTRA merupakan gabungan dari dua buah kata berbahasa
+              Sansekerta, yakni “Artha” yang dapat diartikan sebagai
+              agung/gunung/kebaikan serta “Sastra” yang berarti pedoman dan sarana.</p>
               <a href="#" class="btn btn-primary btn-filosofi d-flex align-items-center">Baca Selengkapnya</a>
             </div>
           </div>
@@ -178,7 +189,7 @@
 
         <div class="row mt-4">
 
-          <div class="col-lg">
+          <div class="col-md mt-5">
 
             <h3 class="text-center">Fasilkom News</h3>
 
@@ -244,7 +255,7 @@
 
           </div>
           
-          <div class="col-lg event">
+          <div class="col-md event gy-5">
             <h3 class="text-center">Upcoming Events</h3>
 
             <div id="event" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
@@ -324,12 +335,13 @@
 
         <div class="row">
 
-          <div class="col-lg-4 text-center offset-1">
+          <div class="col-md-4 offset-1 text-center mt-4">
             <img src="assets/img/apps.png" alt="" class="w-25 mt-5 pt-5">
+            <img src="assets/img/apps.png" alt="" class="w-25 pt-5 img-shadow">
             <h6 class="mt-5">Aplikasi Publik adalah aplikasi yang tersedia untuk masyarakat Fasilkom Unsika</h6>
           </div>
 
-          <div class="col-lg-6 mt-5 text-center">
+          <div class="col-md-6 mt-5 text-center">
 
             <div class="row m-4">
             
@@ -472,21 +484,43 @@
   <footer id="footer" class="footer">
 
     <div class="container">
-      <div class="copyright">
+      <div class="copyright text-start">
         <div class="row">
-          <div class="col-md-6">
-            <p>By Departement PTI 2021</p>
-          </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
+            <h4 class="mb-3">BEM Fasilkom UNSIKA</h4>
+            <p>Universitas Singaperbangsa Karawang,<br> Jl. HS. Ronggowaluyo, Telukjambe Timur,<br> Karawang 41361</p>
+            <h4 class="mb-3">Follow Us</h4>
             <div class="social-links">
-              <a href="https://www.facebook.com/bemfasilkomusk" target="_blank" class="facebook"><i
-                class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/bemfasilkomunsika/" target="_blank" class="instagram"><i
-                class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="https://www.facebook.com/bemfasilkomusk" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/bemfasilkomunsika/" target="_blank" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h4 class="mb-3">Informasi</h4>
+            <div class="informasi">
+              <a href="#" target="_blank">Fasilkom News</a>
+              <a href="#" target="_blank">Fasilkom Cup</a>
+              <a href="#" target="_blank">Advocacy Progress Report</a>
+              <a href="#" target="_blank">LPJ Online</a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h4 class="mb-3">Lainnya</h4>
+            <div class="other">
+              <a href="kontak.html">Kontak</a>
+              <a href="visimisi.html">Tentang Kami</a>
             </div>
           </div>
         </div>
+        <div class="row text-center mt-5">
+          <div class="col-md">
+            <p>&#169; BEM Fasilkom UNSIKA 2021<br>By Departement <a href="pti.html" class="link-pti">PTI</a> 2021</p>
+            <p></p>
+          </div>
+        </div>
+      </div>
     </div>
+
   </footer>
   <!-- End Footer -->
 
@@ -500,6 +534,7 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
