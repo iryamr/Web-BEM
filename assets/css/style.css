@@ -9,6 +9,8 @@ body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: "Poppins", sans-serif;
   color: #444444;
+  background: url(../img/bg-web-1.png) center repeat-y;
+  background-size: contain;
 }
 
 a {
@@ -17,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #717ff5;
+  color: #4a7280;
   text-decoration: none;
 }
 
@@ -441,8 +443,8 @@ section {
 
 .hero .hero-img {
   /* text-align: right; */
-  margin-bottom: 40px;
-  margin-left: -30px;
+  margin-bottom: 30px;
+  margin-left: -10px;
   /* filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4)); */
 }
 
@@ -450,6 +452,7 @@ section {
   .hero {
     height: auto;
     padding: 120px 0 60px 0;
+    background-position: 0vh 20vh;
   }
   .hero .hero-img {
     text-align: center;
@@ -463,6 +466,7 @@ section {
 @media (max-width: 768px) {
   .hero {
     text-align: center;
+    background-position: -13vh 15vh;
   }
   .hero h1 {
     font-size: 32px;
@@ -476,6 +480,14 @@ section {
   .hero .hero-img img {
     margin-top: -20px;
     width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    background: url(../img/Background-Hero-992.png) no-repeat;
+    background-position: 0 15vh;
+    background-size: cover;
   }
 }
 
@@ -522,22 +534,67 @@ section {
   color: white;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
+  .features {
+    margin-top: -100px !important;
+  }
+
   .features img {
-    margin-top: 30px !important;
     position: relative;
+    top: -0 !important;
     left: -70px;
   }
 
   .features .img-shadow {
     margin-top: -20px !important;
-    top: 68px;
-    left: 217px;
+    top: 68px !important;
+    left: 226px !important;
   }
 
   .features h6 {
-    overflow: auto;
+    position: absolute !important;
+    top: 300px !important;
+    margin-top: 0 !important;
+    overflow: auto !important;
+  }
+
+  .features .feature-box {
+    position: relative;
+    top: 50px;
+  }
+
+  .features .app-public {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .features {
+    margin-top: -250px;
+  }
+
+  .features img {
+    margin-top: 30px !important;
+    position: relative;
+    top: 140px;
+    left: -60px;
+  }
+
+  .features .img-shadow {
+    margin-top: -20px !important;
+    top: 218px;
+    left: 124px;
+  }
+
+  .features h6 {
+    overflow: hidden;
+    position: relative;
+    top: 130px;
     margin-left: -70px;
+  }
+
+  .features .app-public {
+    margin-bottom: 25px;
   }
 }
 
@@ -923,10 +980,10 @@ section {
 --------------------------------------------------------------*/
 .footer {
   /* background: rgba(0, 0, 0, 0.05); */
+  margin-top: -40vh;
   padding: 0 0 30px 0;
   font-size: 14px;
   /* border-top: 1px solid rgba(0, 0, 0, 0.05); */
-  height: 92vh;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%22100%25%22%20width%3D%22150%25%22%20id%3D%22svg%22%20viewBox%3D%220%200%201440%20600%22%20class%3D%22transition%20duration-300%20ease-in-out%20delay-150%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22gradient%22%3E%3Cstop%20offset%3D%225%25%22%20stop-color%3D%22%23eeb34cff%22%2F%3E%3Cstop%20offset%3D%2295%25%22%20stop-color%3D%22%23fcb900ff%22%2F%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Cpath%20d%3D%22M%200%2C600%20C%200%2C600%200%2C300%200%2C300%20C%2085.311004784689%2C311.8086124401914%20170.622009569378%2C323.61722488038276%20265%2C316%20C%20359.377990430622%2C308.38277511961724%20462.82296650717694%2C281.3397129186603%20552%2C295%20C%20641.177033492823%2C308.6602870813397%20716.086124401914%2C363.02392344497605%20815%2C370%20C%20913.913875598086%2C376.97607655502395%201036.8325358851673%2C336.5645933014354%201145%2C317%20C%201253.1674641148327%2C297.4354066985646%201346.5837320574165%2C298.71770334928226%201440%2C300%20C%201440%2C300%201440%2C600%201440%2C600%20Z%22%20stroke%3D%22none%22%20stroke-width%3D%220%22%20fill%3D%22url(%23gradient)%22%20class%3D%22transition-all%20duration-300%20ease-in-out%20delay-150%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat no-repeat;
   background-position: center center;
@@ -935,7 +992,7 @@ section {
 
 .footer .copyright {
   text-align: center;
-  padding-top: 60vh;
+  padding-top: 70vh;
   padding-left: 60px;
   color: white;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
@@ -952,7 +1009,7 @@ section {
 }
 
 .footer .copyright .social-links a {
-  font-size: 20px;
+  font-size: 30px;
   display: inline-block;
   color: white;
   line-height: 0;
@@ -964,8 +1021,8 @@ section {
   color: #4a7280;
 }
 
-.footer .copyright .informasi,
-.footer .copyright .other {
+.footer .copyright .informasi a,
+.footer .copyright .other a {
   width: fit-content;
 }
 
@@ -978,6 +1035,34 @@ section {
   left: -33vh;
   bottom: -15vh;
   z-index: -99;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    background-position: -100vh;
+  }
+
+  .footer .copyright {
+    padding-left: 20px;
+  }
+
+  .footer .copyright p {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    background-position: -100vh;
+  }
+
+  .footer .copyright {
+    padding-left: 0px;
+  }
+
+  .footer .copyright p {
+    padding-left: 0;
+  }
 }
 
 /* seputarFasilkom */
@@ -1020,9 +1105,9 @@ section {
   filter: invert(0);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .seputarFasilkom {
-    height: fit-content;
+    height: max-content !important;
   }
 }
 
@@ -1039,59 +1124,51 @@ section {
   border-radius: 10px;
 }
 
-@media screen and (min-width: 768px) {
-  #fasilkomNews .carousel-inner {
-    width: 70%;
-    position: relative;
-    left: 15%;
-  }
-}
-
 @media screen and (max-width: 768px) {
   #fasilkomNews .carousel-inner {
     width: 70%;
+    height: max-content;
     position: relative;
-    left: 15%;
+    left: 55px !important;
   }
-}
 
-@media screen and (max-width: 576px) {
   #fasilkomNews .carousel-control-prev-icon,
   #fasilkomNews .carousel-control-next-icon {
     position: relative;
-    top: 70px !important;
+    top: 200px !important;
   }
 
   #fasilkomNews .carousel-control-prev-icon {
     position: relative;
-    left: 15px !important;
+    left: 300px !important;
   }
 
   #fasilkomNews .carousel-control-next-icon {
     position: relative;
-    right: 15px !important;
+    right: 50px !important;
   }
 }
 
 @media screen and (max-width: 992px) {
   #fasilkomNews .carousel-inner {
     height: max-content;
+    width: 350px;
+    position: relative;
+    left: 0;
   }
 
   #fasilkomNews .carousel-control-prev-icon,
   #fasilkomNews .carousel-control-next-icon {
     position: relative;
-    top: 60px;
+    top: 200px;
   }
 
   #fasilkomNews .carousel-control-prev-icon {
-    position: relative;
-    left: 40px;
+    left: 25vh;
   }
 
   #fasilkomNews .carousel-control-next-icon {
-    position: relative;
-    right: 40px;
+    right: 0vh;
   }
 }
 
@@ -1144,7 +1221,7 @@ section {
   margin-right: 100px;
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (min-width: 768px) {
   #event {
     margin-top: 40px;
   }
@@ -1176,24 +1253,29 @@ section {
     position: relative;
     right: 50px !important;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
+  .event {
+    margin-top: 60px;
+  }
+
   #event {
-    margin-top: 40px;
+    margin-top: 60px !important;
   }
 
   #event .carousel-inner {
-    width: 60%;
+    width: 80% !important;
+    height: max-content !important;
     position: relative;
-    left: 20%;
+    left: 10% !important;
   }
 
   #event .carousel-control-prev {
     position: absolute;
     bottom: -300px;
     margin-top: -25px;
-    margin-left: 250px;
+    margin-left: -6vh;
   }
 
   #event .carousel-control-next {
@@ -1201,6 +1283,22 @@ section {
     bottom: -300px;
     margin-top: -25px;
     margin-right: 60px;
+  }
+
+  #event .carousel-control-prev-icon,
+  #event .carousel-control-next-icon {
+    position: absolute;
+    top: 250px !important;
+  }
+
+  #event .carousel-control-prev-icon {
+    position: absolute;
+    left: 350px !important;
+  }
+
+  #event .carousel-control-next-icon {
+    position: relative;
+    right: 0 !important;
   }
 }
 
@@ -1211,22 +1309,24 @@ section {
 
   #event .carousel-inner {
     height: max-content;
+    width: 100%;
+    position: relative;
+    top: -30px;
+    left: 30px;
   }
 
   #event .carousel-control-prev-icon,
   #event .carousel-control-next-icon {
     position: relative;
-    top: 200px;
+    top: 180px;
   }
 
   #event .carousel-control-prev-icon {
-    position: relative;
-    left: 80px;
+    left: -150px;
   }
 
   #event .carousel-control-next-icon {
-    position: relative;
-    right: 30px;
+    right: -120px;
   }
 }
 
@@ -1277,7 +1377,7 @@ section {
   border-radius: 10px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .struktur .container {
     height: auto;
   }
@@ -1426,9 +1526,9 @@ section {
 /* FIlosofi */
 
 .filosofi {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%22100%25%22%20width%3D%22100%25%22%20id%3D%22svg%22%20viewBox%3D%220%200%201440%20600%22%20class%3D%22transition%20duration-300%20ease-in-out%20delay-150%22%3E%3Cpath%20d%3D%22M%200%2C600%20C%200%2C600%200%2C300%200%2C300%20C%20145.96428571428572%2C325%20291.92857142857144%2C350%20409%2C345%20C%20526.0714285714286%2C340%20614.2500000000001%2C305%20719%2C282%20C%20823.7499999999999%2C259%20945.0714285714284%2C248%201068%2C253%20C%201190.9285714285716%2C258%201315.4642857142858%2C279%201440%2C300%20C%201440%2C300%201440%2C600%201440%2C600%20Z%22%20stroke%3D%22none%22%20stroke-width%3D%220%22%20fill%3D%22%23eeb34cff%22%20class%3D%22transition-all%20duration-300%20ease-in-out%20delay-150%22%20transform%3D%22rotate(-180%20720%20300)%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url(../img/bg-web-2.png);
   background-repeat: no-repeat no-repeat;
-  background-position: center -35vh;
+  background-position: 0 -1vh;
   background-size: cover;
 }
 
@@ -1484,16 +1584,45 @@ section {
   height: 50px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
+  .filosofi {
+    background-position-y: -5vh;
+  }
+
+  .filosofi .logo-filosofi {
+    text-align: center;
+  }
+
+  .filosofi .logo-filosofi img {
+    margin-bottom: -5vh;
+  }
+
+  .filosofi .btn-filosofi {
+    margin: 50px 45px 20px auto !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .filosofi {
+    background-position-y: -5vh;
+  }
+
+  .filosofi .logo-filosofi img {
+    margin-left: 22vh !important;
+    margin-bottom: -5vh;
+  }
+
+  .filosofi p {
+    text-align: center;
+  }
+
   .filosofi .card {
     width: max-content !important;
     height: fit-content !important;
   }
 
   .filosofi .btn-filosofi {
-    top: 40vh;
-    left: 14vh;
-    bottom: 0;
+    margin: 40px auto;
   }
 }
 
@@ -1526,4 +1655,107 @@ section {
   .logo img {
     margin-left: 0;
   }
+}
+
+/* APR */
+
+.apr .card {
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.apr .card h4 {
+  margin-top: 15px;
+}
+
+.apr .card h4 a {
+  color: #4a7280;
+  transition: 0.5s;
+}
+
+.apr .card h4 a:hover {
+  color: #eeb34c;
+}
+
+.apr .card p {
+  margin-bottom: -5px;
+  color: gray;
+}
+
+/* Progress bar */
+
+.progressbar {
+  margin: 50px auto;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.progressbar li {
+  list-style-type: none;
+  float: left;
+  width: 33.33%;
+  position: relative;
+  text-align: center;
+}
+
+.progressbar li::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #ddd;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.progressbar li:nth-child(1)::before {
+  content: "\f017";
+  font-weight: normal;
+}
+
+.progressbar li:nth-child(2)::before {
+  content: "\f2f9";
+}
+
+.progressbar li:nth-child(3)::before {
+  content: "\f00c";
+}
+
+.progressbar li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #ddd;
+  top: 23px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child::after {
+  content: none;
+}
+
+.progressbar li.process {
+  color: rgb(255, 208, 0);
+}
+
+.progressbar li.process::before {
+  border-color: rgb(255, 208, 0);
+}
+
+.progressbar li.done {
+  color: #18d26e;
+}
+
+.progressbar li.done::before {
+  border-color: #18d26e;
+}
+
+.progressbar li.done + li::after {
+  background-color: #18d26e;
 }
