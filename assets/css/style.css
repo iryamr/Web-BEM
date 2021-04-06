@@ -1365,6 +1365,10 @@ section {
   background-color: rgba(0, 0, 0, 0.01);
 } */
 
+#portfolio .portfolio-links a:hover {
+  background-color: #4a7280;
+}
+
 /* struktur */
 
 .struktur .container {
