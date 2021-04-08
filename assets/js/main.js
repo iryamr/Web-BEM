@@ -119,6 +119,17 @@
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
+
+  /**
+   * Mobile nav closed when click out of navbar
+   */
+  // $(document).click(function (event) {
+  //   var clickover = $(event.target);
+  //   var _opened = $(".navbar-mobile").hasClass("navbar-mobile");
+  //   if (_opened === true && !clickover.hasClass("mobile-nav-toggle")) {
+  //     $("i.mobile-nav-toggle").click();
+  //   }
+  // });
   
   /**
    * Scrool with offset on links with a class name .scrollto

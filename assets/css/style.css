@@ -311,8 +311,19 @@ section {
   .mobile-nav-toggle {
     display: block;
   }
+
   .navbar ul {
     display: none;
+  }
+}
+
+@media (min-width: 991px) {
+  .mobile-nav-toggle.bi-x {
+    display: block;
+  }
+
+  .navbar ul {
+    display: flex;
   }
 }
 
@@ -408,7 +419,7 @@ section {
 
 .hero {
   height: 100vh;
-  background: url(../img/Background-Hero.png) top center no-repeat;
+  background: url(../img/Background-Hero.png) top center no-repeat !important;
   background-size: cover;
   color: #4a7280;
   /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); */
@@ -448,11 +459,25 @@ section {
   /* filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.4)); */
 }
 
-@media (max-width: 991px) {
+@media (min-width: 1200px) {
+  .hero {
+    background: url(../img/Background-Hero-992-1.png);
+    background-position: 0 0 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero {
+    background: url(../img/Background-Hero-992-1.png);
+    background-position: 0 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
   .hero {
     height: auto;
-    padding: 120px 0 60px 0;
-    background-position: 0vh 20vh;
+    padding: 0 0 60px 0;
+    background-position: -5vh 0vh !important;
   }
   .hero .hero-img {
     text-align: center;
@@ -466,7 +491,7 @@ section {
 @media (max-width: 768px) {
   .hero {
     text-align: center;
-    background-position: -13vh 15vh;
+    background-position: -30vh -15vh !important;
   }
   .hero h1 {
     font-size: 32px;
@@ -480,14 +505,6 @@ section {
   .hero .hero-img img {
     margin-top: -20px;
     width: 100%;
-  }
-}
-
-@media (max-width: 992px) {
-  .hero {
-    background: url(../img/Background-Hero-992.png) no-repeat;
-    background-position: 0 15vh;
-    background-size: cover;
   }
 }
 
@@ -1547,7 +1564,7 @@ section {
 .filosofi {
   background-image: url(../img/bg-web-2.png);
   background-repeat: no-repeat no-repeat;
-  background-position: 0 -1vh;
+  /* background-position: 0 -2vh; */
   background-size: cover;
 }
 
@@ -1605,7 +1622,7 @@ section {
 
 @media screen and (max-width: 768px) {
   .filosofi {
-    background-position-y: -5vh;
+    background-position: -12vh -5vh !important;
   }
 
   .filosofi .logo-filosofi {
