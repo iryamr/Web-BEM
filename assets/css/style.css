@@ -1779,3 +1779,20 @@ section {
 .progressbar li.done + li::after {
   background-color: #18d26e;
 }
+
+@media screen and (min-width: 992px) {
+  #imgm2{
+    display: none;
+  }
+  #tm{
+    margin-top: 160px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #imgm{
+    display: none;
+  }
+  #tm{
+    margin-top: 40px;
+  }
+}
